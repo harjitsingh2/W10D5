@@ -5,16 +5,20 @@ const GalleryNavigation = ({galleries}) => {
 
     const galleryLinks = galleries.map((gallery) => {
         return (
-        <NavLink to={`/galleries/${gallery.id}`}>Words
-        </NavLink>
+        <li>
+            <NavLink to={`/galleries/${gallery.id}`}>
+                {gallery.name}
+            </NavLink>
+        </li>
         )
     })
     return (
         <nav>
             <NavLink to="/">Home</NavLink>
             <h1>Galleries</h1>
-            <NavLink to="/galleries/1">Gallery 1</NavLink>
-            <NavLink to={`/galleries/${galleries.id}`}>Words</NavLink>
+            <ul>
+            {galleryLinks}
+            </ul>
 
         </nav>
 
