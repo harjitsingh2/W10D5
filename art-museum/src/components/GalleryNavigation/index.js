@@ -1,15 +1,16 @@
-import {NavLink} from "react-router-dom"
+import {NavLink} from "react-router-dom";
+import "./GalleryNavigation.css";
 
 
 const GalleryNavigation = ({galleries}) => {
 
     const galleryLinks = galleries.map((gallery) => {
         return (
-        <li>
+         <li>
             <NavLink to={`/galleries/${gallery.id}`}>
                 {gallery.name}
             </NavLink>
-        </li>
+         </li>
         )
     })
     return (
