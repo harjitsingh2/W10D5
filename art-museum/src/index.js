@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import harvardArt from "./data/harvardArt";
+// import harvardArt from "./data/harvardArt";
+// import  GalleryNavigation  from "./components/GalleryNavigation";
 
 const Root = () => {
   return (
@@ -19,5 +20,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-console.log(harvardArt);
